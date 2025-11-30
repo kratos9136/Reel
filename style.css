@@ -92,10 +92,10 @@ section{
 .bottom .user button{
     background-color: transparent;
     padding: 2px 4px;
-    font-style: 12px ;
+    font-size: 12px ;
     font-weight: 500;
     border-radius: 2px;
-    border: 1 px solid white;
+    border: 1px solid white;
 }
 .bottom>h3{
     font-weight: 500;
@@ -111,8 +111,8 @@ section{
     width: 40px;
     position: absolute;
     /* transform: translateX(100%); */
-    right: 1vw;
-    
+    right: 0vw;
+    align-items: center;
     bottom: 12px;
     border-radius: 10px;
     background: linear-gradient(to right,transparent,rgba(0, 0, 0, 0.056));
@@ -126,5 +126,49 @@ section{
 .right h6{
     font-size: 15px;
     font-weight: 500;
+}
 
+.right > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+
+.like{
+    color:red;
+}
+
+
+
+.right > div h4{
+    pointer-events: none;
+}
+.right > div h6{
+    pointer-events: none;
+}
+
+#mute{
+    background-color: #333;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    
+}
+#mute i {
+    font-size: 22px;
+    pointer-events: none;
+}
+#mute:active{
+    scale:0.95;
 }
